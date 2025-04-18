@@ -1,0 +1,14 @@
+<section id="addbook">
+    <h2>Delete</h2>
+    <form (ngSubmit)="onSubmit()">
+      <p>
+        <label for="title">Book ID</label>
+        <input type="text" id="title" name="id" [(ngModel)]="bookId" />
+      </p>
+  
+      <p class="actions">
+        <button type="submit">Delete</button>
+      </p>
+    </form>
+  <!-- </dialog> -->
+  </section>

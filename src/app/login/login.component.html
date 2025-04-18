@@ -1,0 +1,24 @@
+<app-header>
+  <div style="float: right;" >
+    <button (click)="loginClick()" >Login</button>
+    <button (click)="register()" >Register</button>
+  </div>
+</app-header>
+<form (ngSubmit)="login()">
+    @if(registererror===true){
+        <p style="color: red; text-align: center;">{{fallbackContent}}</p>
+    }
+    <h3>Register</h3>
+    <p>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="Username" [(ngModel)]="user.username" />
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input id="text" name="password" [(ngModel)]="user.password"/>
+    </p>
+
+    <p class="actions">
+        <button type="submit">Login</button>
+      </p>
+  </form>

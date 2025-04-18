@@ -1,0 +1,44 @@
+.buttons{
+    display: flex;
+    align-items: left;
+    justify-content: start;
+    padding-left: 0px;
+    padding-top: 0px;
+    max-height: 100%;
+    max-width: 20%;
+} 
+
+   button{
+       height: 40px ;
+       width: 200px;
+     /* background-color:#ffffff;
+     /* border-color: #e6dfff  #e6dfff   #e6dfff   #e6dfff    ; */
+     border: none;
+     background: linear-gradient(
+      to top,    
+      #efecfb,
+      #ffffff
+    );
+     /* margin: 0px 0px 0px 20px;  */ 
+    }
+
+    div{
+        width: 200px;
+        flex-direction: column;
+        border-radius: 6px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+   }
+
+   span{
+    display: flex;
+    height: 82.4vh;
+
+
+   }
+
+   .content{
+    flex-grow: 1;
+    padding: 20px;
+
+   }
