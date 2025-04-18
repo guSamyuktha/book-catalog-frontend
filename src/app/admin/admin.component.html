@@ -1,0 +1,44 @@
+<app-header/>
+<span>
+  <div class = "buttons">
+      <button (click)="onClickAddBook()" id="add-button" >
+          Add New Book
+      </button>
+      <button (click)="onClickRemoveBook()"  >
+        Delete Book
+      </button>
+      
+      <button (click)="onClickViewBook()" >
+        View Books
+      </button>
+      <button (click)="onClickUpdateBook()" >
+        Update Books
+      </button>
+    </div>
+    <div class="content" id="main-content" >
+
+      @if (selectedValue==1) {
+        <app-add-books/>
+      }
+      @else if (selectedValue==2) {
+        <app-delete-book/>
+      }
+      @else if (selectedValue==3) {
+        <app-view-books/>
+      }
+      @else if (selectedValue==4) {
+        <app-update-book/>
+      }
+      
+
+    </div>
+
+    <!-- <button (click)="onClickUpdateBook()"  style="height: 40px ;width: 150px; background-color:#d8a3fc ;border-color: #d18bff;  margin: 0px 0px 0px 20px;" >
+        Update Hangar
+    </button>
+  
+    @if (isUpdateBook) {
+        <app-update-hangar [hangarID]="selectedHangar.hangarID" 
+         (close)="onCloseUpdateBook()"/>
+      } -->
+  </span>
